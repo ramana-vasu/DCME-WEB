@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>diploma cme syllabus </title>
+<style>
+
+/* Set height of body and the document to 100% */ 
+body{
+  
+  height:100℅;
+  margin:0;
+  background-color:lightpink;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.topnav {
+    background-color:#000000;
+    border:1px solid white;
+    color: #fff;
+    overflow:hidden;
+    display: flex;
+    width:100%;
+    
+}
+.topnav a {
+   
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+ 
+}
+ 
+  
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+}
+.topnav a:hover {
+  background-color:white;
+  color:black;
+}
+.topnav a.active {
+  background-color:white;
+  color: white;
+}
+
+.search1{
+      
+    border: 3px solid black;
+    border-radius: 100px;
+    height: 20px;
+    width: 50%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color:white;
+    }
+
+.search2{
+    border:3px solid black;
+    border-radius:100px;
+    height:30px;
+}
+
+.search2:hover, .search2:focus {
+    border: 3px solid blue;
+    background-color:powderblue;
+  }
+
+.search1:hover, .search1:focus {
+    border: 3px solid blue;
+    background-color:powderblue;
+  }
+
+
+
+
+
+h1{
+    font-size:60px;
+    text-align:center;
+}
+h2{
+    text-align:center;
+    font-size:40px;
+}
+.clickable-element {
+  display:none;
+}
+.div1{
+        font-family: "Sacramento",cursive;
+        background-color:powderblue;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+        padding-top:0px;
+        width: 120px;
+        color: blue;
+        text-align:center;
+        margin:auto;
+        border:1px solid black;
+  }
+  
+  
+  
+  .innerdiv{
+     
+        height:20px;
+        background-color:lightblue;
+        border-radius:6px;
+        width: 60px;
+        border:1px solid black;
+        color:purple;
+        margin:auto;
+        font-style:strong;
+  }
+  
+  
+  
+      
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    height:10%;
+}
+
+
+
+
+</style>
+<script>
+
+  
+function searchElements() {
+  const searchText = document.getElementById("searchInput").value.toLowerCase();
+  const clickableElements = document.querySelectorAll(".clickable-element");
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = ""; // Clear previous results
+
+  clickableElements.forEach((element) => {
+    const elementText = element.textContent.toLowerCase();
+    if (elementText.includes(searchText)) {
+      element.style.display = "block"; // Show matching elements
+      resultsDiv.innerHTML += `<p>${elementText}</p>`;
+    } else {
+      element.style.display = "none"; // Hide non-matching elements
+    }
+  });
+}
+
+
+        
+</script>
+
+</head>
+<body background="C:\Users\AkhilBhaskar\Desktop\hello.jpg">
+
+<div class="topnav" style="position:fixed">
+   <div class="C:\Users\AkhilBhaskar\Desktop\project logo.jpg">
+            <img src="myimages/education.png" alt="Your Logo">
+        </div>
+  <a href="website.html"><b>HOME</b></a>
+  <a href="contact_us.html"><b>CONTACT</b></a>
+  <a href="About_us.html"><b>ABOUT US</b></a>
+  <a href="usersignup.php"><b>USER SIGNUP</b></a>
+  <a href="login.php"><b>ADMIN LOGIN</b></a>
+
+</div>
+<br><br><br>
+<div class="topnav" style="position:fixed">
+  <a href="1stsem.html"><b>1<sup>st</sup>SEM</b></a>
+  <a href="3rdsem.html"><b>3<sup>rd</sup>SEM</b></a>
+  <a href="4thsem.html"><b>4<sup>th</sup>SEM</b></a>
+<a href="5thsem.html"><b>5<sup>th</sup>SEM</b></a>
+<a href="6thsem.html"><b>6<sup>th</sup>SEM</b></a>
+</div>
+<br><br>
+<h2>DCME Syllabus </h2>
+<h3 style="text-align:center">Study Smarter, Not Harder <br>C20 Computer Engineering Diploma Roadmap</h3>
+
+<p style="text-align:center "><b>
+This website describes briefly about C20 computer engineering syllabus of diploma from first year to final year and provides previous repeated questions, question papers & all topics in unit wise with their marks allocation and blueprints of each subjects
+</b>
+</p>
+<b></b>
+<br><br>
+
+<div style="text-align:center"><input class="search1" type="text" id="searchInput" placeholder="Search your semester">
+  <button class="search2" onclick="searchElements()">Search</button>
+   
+
+
+    <div id="results"></div>
+
+    <!-- Your clickable elements (hidden by default) -->
+  <a href="1stsem.html" class="clickable-element">1stsem</a>
+  <a href="3rdsem.html" class="clickable-element">3rdsem</a>
+  <a href="4thsem.html" class="clickable-element">4thsem</a>
+  <a href="5thsem.html" class="clickable-element">5thsem</a>
+  <a href="6thsem.html" class="clickable-element">6thsem</a>
+</div>
+
+<br><br><br>
+
+
+<div class="div1">
+<p style="font-size:40px"><b>1<sup>st</sup>year </b></p>
+<a href="1stsem.html"><p class="innerdiv"><b>1<sup>st</sup>sem</b></p></a>
+</div>
+
+<br><br><br>
+
+<div class="div1">
+<p style="font-size:40px"><b>2<sup>nd</sup>year</b></p>
+<a href="3rdsem.html"><p class="innerdiv"><b>3<sup>rd</sup>sem</b></p></a>
+<br>
+<a href="4thsem.html"><p class="innerdiv"><b>4<sup>th</sup>sem</b></p></a>
+</div>
+
+
+<br><br><br>
+
+<div class="div1">
+<p style="font-size:40px"><b>3<sup>rd</sup>year</b></p>
+<a href="5thsem.html"><p class="innerdiv"><b>5<sup>th</sup>sem</b></p></a>
+<br>
+<a href="6thsem.html"><p class="innerdiv"><b>6<sup>th</sup>sem</b></p></a>
+</div>
+
+<br><br><br>
+
+
+<div class="footer">
+        <p>&copy; 2023 C20 currculation diplama computer engineering</p>
+        <p>
+        This website describes briefly about C20 computer engineering syllabus of diploma from first year to final year and provides previous repeated questions, question papers & all topics in unit wise with their marks allocation and blueprints of each subjects
+        </p>
+        <p>
+       It is a website which describes briefly About G20 CHE Syllabus Diploma. & It is Used for To nechce dropout rates and to provide and access quality of Education # discribes briefly About the topic and their marks weightages and previous grepeated Questions & Question papers which is Currently present in Go regulation.
+        </p>
+    </div>
+
+
+</body>
+</html>

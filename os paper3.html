@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+               background-color: #f0f0f0;
+               font-family: Arial, sans-serif;
+           }
+           h1 {
+               color: red;
+           }
+           h2 {
+              color:orange;
+              }
+           p {
+               color: #666;
+           .row{
+               display: flex;
+               align-items: center;
+           }
+           .row{
+               align-items: center;
+           }
+       </style>
+<body>
+    <div class="row">
+        <button><a href="os.html">back</a></button>
+        <h1 style="padding-left: 550px;">OPERATING SYSTEM</h1>
+    </div>
+    <h2>MOSTLY REPEATED QUESTIONS IN PREVIOUS EXAMINATIONS:</h2>
+<br>1)what is deadlock.</br>
+<br>2)define multiprocessor systems.</br>
+<br>3)explain about process synchronization.</br>
+<br>4)explain about deadlock.</br>
+<br>5)explain about directory structures.</br>
+<br>6)write about operating systems.</br>
+<h2>ANSWERS FOR REPEATED QUESTIONS</h2>
+<br>1)In a multi programming environment a process is said to be in a state of dead lock if it is waiting for an event that 
+will never occur. In a system deadlock, one or more processes are deadlocked. A process requests resources, and if the
+ resources are not available at that time, the process enters a wait state. It may happen that waiting process will never 
+change state, because the resources they have requested are held by other walting processes. This situation is called 
+deadlock.</br>
+A deadlock occurs in a system if the following four conditions hold simultaneously:
+
+<br>1. Mutual Exclusion: At least one of the resources is non-sharable that is only one process at a time can be use the resource.</br>
+
+2.<br> Hold and Wait: A process exists that is holding on to at least one resource and waiting for an additional resource held by another process.</br>
+
+3.<br> No Preemption : Resources cannot be preempted that is a resource is released only by the process that is holding it.</br>
+
+4.<br> Circular Wait: There exist a set of processes Po, P1..., Pn
+
+of waiting processes such that Po is waiting for a resource held
+
+by P1, P₁ is waiting for a resource held by P2,</br>
+<br>2)Multiprocessor systems are also known as parallel systems or tightly coupled systems.</br>
+
+<br>Multiprocessor system is a system with more than one CPU
+
+working in close communication with one another.</br>
+
+<br>tightly couplel system.</br>
+
+<br>Processors share memory and a clock; communication usually takes shared memory.</br>
+
+Advantages:
+
+<br>• Increased through put : More work will be done in less time.</br>
+
+<br>• Economical: Multi processor systems can save more money than multiple single processor systems, because they share peripherals, mass storage, and power supplies.
+
+Increased Reliability: If functions can be distributed properly among several processors, then the failure of one processor will not half the system.</br>
+<br>3)Process Synchronization is the task of coordinating the execution of processes in a way that no two processes
+ can have access to the same shared data and resources.It is specially needed in a multi-process system when multiple
+ processes are running together, and more than one processes try to gain access to the same shared resource or data at the 
+same time.This can lead to the inconsistency of shared data. So the change made by one process not necessarily 
+reflected when other processes accessed the same shared data. To avoid this type of inconsistency of data, the processes 
+need to be synchronized with each other.</br>
+<br>4)In a multi programming environment a process is said to be in a state of dead lock if it is waiting for an event that will 
+never occur. In a system deadlock, one or more processes are deadlocked. A process requests resources, and if the resources 
+are not available at that time, the process enters a wait state. It may happen that waiting process will never change state, 
+because the resources they have requested are held by other waiting processes. This situation is called deadlock.</br>
+<br>5)Files systems are very large. Files have to be organized. Usually a two level organization is done :
+The file system is divided into partitions. Default there is at least one partition. Partitions are nothing but virtual disks with
+ each partition considered as a separate storage device.
+• Each partition has information about the files in it. This information is nothing but a table of contents. It is known as a
+ directory.The directory maintains information about the name, location, size and type of all files in the partition.
+ A directory has a logical structure. Directories are files which are under control of the OS. An interactive user can only see some 
+of the attributes by using commands Is (UNIX) or dir (MS-DOS).
+The following are some common ways of organizing directories i.e., these are the various directory structures.
+This is a simple directory structure that is very easy to support. All files reside in one and the same directory.
+A single-level directory has limitations as the number of files and users increase. Since there is only one directory to
+ list all the files, no two files can have the same name, that is, file names must be unique in order to identity one file 
+from another. Even with one user, it is difficult to maintain files with unique names when the number of files becomes larger.
+<br>1. Two-Level Directory: The main limitation of single-level directory is to have unique file names by different users. 
+One solution to the problem could be to create separate directories A two-level directory structure has one directory exclusively
+ for each user. The directory structure of each user is similar in structure and maintains file information about files present in 
+that directory only. The operating system has one master directory for a partition. This directory has entries for each of the user
+ directories.for each user.Files with same names exist across user directories but not in the same user directory.
+ File maintenance is easy. Users are isolated from one another. But when users work in a group and each wants to access
+ files in another users directory, it may not be possible.</br>
+Access to a file is through user name and file name. This is known as a path. Thus a path uniquely defines a file.
+<br>For example: In MS-DOS if 'C' is the partition the C"/user1/ Test, C:\User2\test, C:\user3-C are all files in user directories. 
+Files could be created, deleted, searched and renamed in the user directories only.</br>
+<br>2. Three Structure Directories: A two level directory is a tree of height two with the master file directory at the root having user
+ directories as descendants that in turn have the files themselves as descendants. Tree-structured directories area generalization 
+of this two-level directory structure to have a directory structure of arbitrary height. This generalization allows users to organize 
+files within user directories into sub directories. Every files has a unique path. Here the path is from the root through all the 
+sub directories to the specific file.Usually the user has a current directory. User created sub directories could be traversed. 
+Files are usually accessed by giving their path names. Path names could be either absolute or relative. Absolute path names 
+begin with the root and give the complete path down to the file. Relative path names beginwith the current directory. 
+Allowing users to define sub.directories allows for organizing user files based on topics. A directory is treated as yet another file in 
+the directory, higher up in the hierarchy. To delete a directory it must be empty. Two options exist: delete all files and then delete 
+the directory or delete all entries in the directory when the directory is deleted. Deletion may be a recursive process since directory 
+to be deleted may contain sub directories.</br>
+<br>6)Operating system can be defined as "system software which acts as interface between user and the system and manages 
+the resources in efficient way"</br>
+The primary goal of an operating system is:To make the computer system easy to use.
+<br>• Secondary goal is hardware resource management.</br>
+The operating system is the most basic program in a computer. All computers have an operating system that us used for starting
+ the computer and running other programs (application programs). The operating system performs important tasks like receiving 
+input from the keyboard and mouse, sending information to the screen, keeping track files and directories on the disk, as well as 
+controlling the various units such as disk printers etc.
+</body>
+</html>
+<br>
+  
+       <br>
+       <h2>If you want previous question papers of this subject press the next button:</h2>
+       <br>
+       <br><br><br>
+       <button><a href="#os.html".html"><B>NEXT</B></B></a></button><br><br><br><br>
+  
+       <div class="footer">
+             <p>&copy; 2023 C20 currculation diplama computer engineering</p>
+             <p>
+             This website describes briefly about C20 computer engineering syllabus of diploma from first year to final year and provides previous repeated questions, question papers & all topics in unit wise with their marks allocation and blueprints of each subjects
+             </p>
+             <p>
+            It is a website which describes briefly About G20 CHE Syllabus Diploma. & It is Used for To nechce dropout rates and to provide and access quality of Education # discribes briefly About the topic and their marks weightages and previous grepeated Questions & Question papers which is Currently present in Go regulation.
+             </p>
+         </div>
+</body>
+</html>

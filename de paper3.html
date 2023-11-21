@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+  body{
+  background-color: pink;
+  font-family:Arial,sans-serif;
+  }
+h1{
+   color:red;
+   }
+h2{
+    color:blue;
+  }
+ p{
+ color:rgb(27, 20, 20):
+}
+ </style>
+  </head>
+<body>
+    <div class="row">
+        <button><a href="DE.html">back</a></button> 
+        <h1 style="padding-left: 450px;">DIGITAL ELECTRONICS</h1>
+    </div>
+    <h2>MOSTLY REPEATED QUESTIONS IN PREVIOUS EXAMINATIONS:</h2>
+<br>1.Draw the symbol of EX-OR gate along with its truth table.</br>
+<br>2. Perform the following binary additions :</br>
+<br>(a) 10011+10100</br>
+<br>(b) 11100+01011</br>
+<br>3.Draw the logic diagram of full adder</br>
+<br>4.Draw the symbols of D and T flip-flops.</br>
+<br>5.Explain the NAND and NOR gates with truth table.</br>
+<br>6.Explain the JK flip-flop circuit.</br>
+<br>7.Draw XOR circuit using NAND gates only</br>
+<br>8. List any three applications of counters.</br>
+<br>9.Draw and explain the working of clocked R-S flip-flop with
+timing diagram.</br>
+<h2>ANSWERS FOR REPEATED QUESTIONS</h2>
+<br>2)10011+10100=101000</br>
+<br>11100+01011=100011</br>
+<br>5)The NAND gate has two or more input signals but only one output signal. All Input signals must be high to get a low output.
+ Fig. 2.40<br> (a) shows the logical structure of a NAND gate, an AND gate followed by an inventer. Therefore the final output is NOT
+ the AND of the inputs. Originally called a NOT-AND gate, the circuit is now referred to as a NAND gate. </br>Fig. 2.40 <br>(b) is the 
+symbol for a NAND gate.</br> The inverter triangle has been deleted and the bubble moved to the AND gate output. If one or more 
+inputs are low the result of ANDing is low; therefore the final inverted output is high. Only when all inputs are high does the 
+ANDing produce a high signal; then the final output is low.</br>
+Table 2.23 summarizes the action of a 2 input NAND gate The boolean expression for a 2 Input NAND gate is
+<br>Using the De-Morgans theorem we have AB = A+B. Therefore the NAND gate can also be got by giving the inputs to
+ two different Inverters and connecting the output of the Inverters to a two input OR gate as shown in Fig. 2.40 (c). 
+The circuit symbd of such a connection is given in Fig. 2.40 (d).</br>
+Regardless of how many inputs a NAND gate has, it is still logically equivalent to an AND gate followed by a NOT gate. 
+The expression for 3 input NAND gate is Y=ABC
+<br>The NOR gate has two or more input signals but only one output signal. All inputs must be low to get a high output.
+ In other words, the NOR gate recognizes only the input word whose bits are all O's. Fig. 2.41<br> (a) shows a logical structure of a 
+NOR gate, which is an OR gate followed by an Inverter. Therefore the final output is NOT the OR of the Inputs. Originally called
+ a NOT-OR gate, the circuit in now referred to as a NOR gate.</br> Fig. 2.41 (b) is a symbol for NOR gata. Notice that the inverter
+ triangle has been deleted and the small bubble moved to the OR gate output.</br>
+<br>6)From truth table, it can be seen that the output a logic I when only one of the inputs is at logic 1. When both the inputs are lor 0 
+then the output is logic 0. Thus the output is 1 only when there are odd number of logic 1s at the input. The logic expression for 
+the exclusive OR gate can be obtained from the truth table and it is</br>
+<br>Y = The symbol used for the EX-OR operation Is . Therefore the expression can be written as Y = AOB. Fig. 2.39 gives the 3 
+Input EX-OR gate and table 2.22 gives its truth table.</br>
+<br>The JK Sp-hop is refinement of the RS flip-flop. The indeterminate state (R-S-1) of RS flip-flop is determined in JK flip-flop 
+In this condition (J K. 1), the complement of previous output is results as present output known as toggle. For this
+
+Asynchronous inpets.</br>
+
+The aryachronous puts activate the flip-flop dependently of the clock.
+
+These aputs override the effect of the synchronous
+
+rapets
+
+<br>Pg 3.12 shows a JK fip-Bop. When J and K low, for leading edge of CLK both the input gates are disabled and the circuit is 
+inactive. When J is low and K is high, the upper gate is disabled. So means R' 1. So there is no way to set the flip-flop. The</br>
+The JK Sp-hop is refinement of the RS flip-flop. The indeterminate state (R-S-1) of RS flip-flop is determined in JK flip-flop In this condition (J K. 1), the complement of previous output is results as present output known as toggle. For this
+
+Asynchronous inpets.
+
+The aryachronous puts activate the flip-flop dependently of the clock.
+
+These aputs override the effect of the synchronous
+
+rapets
+<br>Pg 3.12 shows a JK fip-Bop. When J and K low, for leading edge of CLK both the input gates are disabled and the circuit is
+ inactive. When J is low and K is high, the upper gate is disabled. So means R' 1. So there is no way to set the flip-flop.</br> The
+<br>When J is high and K is low, the lower gate is disabled means S 1. So there is no way to reset the flip-flop. The only possibility
+ is set. When Q is low, Q is high: therefor, the upper gate passes a trigger on the positive clock edge. This drives Q in to the high
+ state. That is, J. 1 and K 0 means that the next positive clock edge sets the flip-flop.</br>
+<br>8)Frequency counters
+Digital clocks
+Analog to digital convertors.</br>
+<br>With some changes in their design, counters can be used as frequency divider circuits. The frequency divider circuit is that 
+which divides the input frequency exactly by ‘2’.
+In time measurement. That means calculating time in timers such as electronic devices like ovens and washing machines.
+We can design digital triangular wave generator by using counters.</br>
+There are many other type of counters rather than synchronous and asynchronous counters, such as Decade counter, Binary
+ counter, Ring counter, Johnson counter, Up / Down counter etc. , which we will discuss about them in our upcoming sessions.</br>
+<br>When the CLK is high, R and S are high, the R' and S' both becomes low. Which gives forbidden condition. This is know
+ race condition for SR flip-flop Fig 3 10 shows the timing diagram of S R flip-flop. Q goes high when S is high and CLK goes high 
+Q returns to low state when R is high and CLK goes high. R and S inputs never be high for high CLK.</br>
+<br>Table 3.3 summarizes the operation of the clocked RS flip-flop. When CLK is low, the output is latched in its previous state. 
+When the CLK is high, the circuit will set if S is high or reset if R is high. CLK, R and S all high is a race condition</br>
+</body>
+</html>
+  
+       <br>
+       <h2>If you want previous question papers of this subject press the next button:</h2>
+       <br>
+       <br><br><br>
+       <button><a href="#de question papers.html".html"><B>NEXT</B></B></a></button><br><br><br><br>
+  
+       <div class="footer">
+             <p>&copy; 2023 C20 currculation diplama computer engineering</p>
+             <p>
+             This website describes briefly about C20 computer engineering syllabus of diploma from first year to final year and provides previous repeated questions, question papers & all topics in unit wise with their marks allocation and blueprints of each subjects
+             </p>
+             <p>
+            It is a website which describes briefly About G20 CHE Syllabus Diploma. & It is Used for To nechce dropout rates and to provide and access quality of Education # discribes briefly About the topic and their marks weightages and previous grepeated Questions & Question papers which is Currently present in Go regulation.
+             </p>
+         </div>
+</body>
+</html>

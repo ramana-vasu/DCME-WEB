@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+1st sem
+</title>
+
+<style>
+body{
+  margin:0;
+  background-color:rgb(141, 214, 98);
+}
+ 
+
+.topnav {
+    background-color:#000000;
+    border:1px solid white;
+    color: #fff;
+    overflow:hidden;
+    display: flex;
+    width:100%;
+    
+}
+.topnav a {
+   
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+ 
+}
+ 
+  
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+}
+.topnav a:hover {
+  background-color:white;
+  color:black;
+}
+.topnav a.active {
+  background-color:white;
+  color: white;
+}
+
+h1{
+    font-size:50px;
+    text-align:center;
+}
+h3{
+    text-align:center;
+    font-size:30px;
+}
+  
+.blueprint{
+  text-align:center;
+  font-size:40px;
+  color:orange;
+}
+  
+ table,th,tr,td{
+   text-align:center;
+   border:1px solid black;
+   color:darkmagenta;
+ }
+  
+  
+.unit{
+  text-align:center;
+  font-size:30px;
+}
+  
+   .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    height:10%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topnav" style="position:fixed">
+   <div class="logo">
+            <img src="myimages/education.png" alt="Your Logo">
+        </div>
+  <a href="website.html"><b>HOME</b></a>
+  <a href="contact_us.html"><b>CONTACT</b></a>
+  <a href="About_us.html"><b>ABOUT US</b></a>
+</div>
+  
+  
+  <br><br><br>
+  <button><a href="comp.html">back</a></button>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+               background-color: #f0f0f0;
+               font-family: Arial, sans-serif;
+           }
+           h1 {
+               color: red;
+           }
+           h2 {
+              color:orange;
+              }
+           p {
+               color: #666;
+           .row{
+               display: flex;
+               align-items: center;
+           }
+           .row{
+               align-items: center;
+           }
+       </style>
+</head>
+<body>
+        <h1 style="width: 100%; text-align: center;">COMP</h1>
+     <h2 style="width: 100%; text-align: center;" > COMPUTER ORGANIZATION & MICROPROCESOR</h2>
+    <h2>ABOUT COMP:</h2>  <br>
+    <p>Computer is a fast electronic calculating machine. Computer accepts digitized input information, processes it according to a list of internally stored instructions, and produces the result output information. Here the list of instructions is called computer program and the internal storage is called computer memory.
+
+        Computer organization is defined as the way the hardware com-
+        
+        ponents operate and the way they are connected together to form the computer system. Computer types differ with many factors like size, cost,
+        
+        performance and use of computer.
+        <br>
+        Personal computers: <br> They have processing and storage units, display, audio and keyboard. They are used in homes, schools and business offices.
+        <br>
+        Notebook computers: <br> They are the compact version of personal computers. All components here are packed into a single unit in the size of briefcase.
+        <br>
+        Work stations: <br>These are same as desktop but they have high resolution graphics I/O capability. They have more computational power than personal computers. They are used in engineering and interactive applications.
+        <br>
+        Enterprise Systems or Main Frames: <br> They are used for business data processing in medium to large corporations that require much more computing power and storage capacity than workstations.</p>
+        <h2>MOSTLY REPEATED QUESTIONS IN PREVIOUS EXAMINATIONS</h2> <br>
+        <P>1)Need of an interface <br>
+            2)cache memory organization <br> 
+        3)About 8086 processor  <br>
+    4)About 80486 processor <br>
+5)About 80286 processor <br>
+6)About 80386 processor <br></P>
+            <h2>ANSWERS FOR REPEATED QUESTIONS</h2> <br>
+            <h4>NEED OF AN INTERFACE:</h4>
+            <p>Any computer systeti design involves interfacing of the CPU with one or more peripheral devices for the purpose of communication with the environment. VO unit is an integral part of the computer Peripherals in most cases are manufactured by other than computer manufacturers. They do not know where their product is used. Designing electrical and mechanical interfaces that match all computers is not feasible. Therefore in many cases an extra hardware unit must be placed between peripheral device and I/O unit of the computer. This hardware is often called a peripheral controller, peripheral adapter or peripheral interface</p> 
+            <br>
+            <h4>CACHE MEMORY organization</h4>
+            <P>  Computer programs and their associated data sets often exhibit a characteristics known as locality. This is a condition where a group of instructions (such as loops) or a subset of data elements (such as a table) are located close to each other and are not scattered randomly throughout memory We can use locality to improve performance by placing small blocks of instructions and data into cache memory <br>
+                The cache memory is a small, fast memory that is located between the main memory and the ALU and control units. It temporarily stored instructions and data during processing and provides the following: <br>
+
+            -->A faster access to data then is possible with main memory
+
+        -->A means to allow data and instruction access during times when the main memory
+
+is busy with I/O operations. Care must be taken to ensure that the information in cache and in main memory is
+
+consistent.
+<br>
+The bus that connects the cache to the control unit and ALU is called the processor bus or local bus. When the control unit wants to read data from memory, an address and read request are sent on the processor bus to the cache. If the desired data is in the cache, we say that a cache hit occurred When this happens, the cache can respond quickly, and the processor can continue without having to wait for the relansely slow main memory to respond
+
+Since the cache is must smaller than main memory, sometimes the instructions or dare requested by the processor will not be in cache. If this happens we say there was a cache miss, but misses occur less than 10 percent of the time in well designed systems When this happens, the control circuitry in the cache passes the address and read request from the processor bus to the system bus. The main memory will then respond
+
+by reading the desired location Unfortunately, because the main memory is slower than cache, the processor will be forced to wait or pause while main memory respond. When the processor is forced to
+
+pause, we say it is placed in a wait state Within the cache, there are three basic types of organization: 
+<br>
+1. Direct Mapped.
+<br>
+2 Fully Associative
+<br>
+3. Set Associative.
+<br>
+In fully associative mapping when a request is made to the cache, the requested address is compared in a directory against all entries in the directory. If the requested address is found (a directory hit), the corresponding location in the cache is fetched and returned to the processor, otherwise, a miss occurs.
+<br>
+In a direct mapped cache, lower order line address bits are used to access the directory Since multiple line address map into the same location in the cache directory, the upper line address bits (tag bits) must be compared with the directory address to ensure a hit. If a comparison is not va id, the result is a cache miss, or simply a miss. The address given to the cache by the processor actually is subdivided into several pieces, each of which has a different role in accessing data.
+<br>
+The set associative cache operates in a fashion somewhat similar to the direct-mapped cache.Bits from the line address are used to address a cache directory However now there are multiple choices: two tour, or more complete line address may be present in the directory. Each of these line addresses corresponds to a location in a sub-cache The collection of these sub-caches forms the total cache array. In a set associative cache, as in the direct mapped cache, all of these sub-arrays can be accessed simultaneously, together with the cache directory. If any of the entries in the cache directory match the references address, and there is a hit, the particular sub-cache
+
+array is selected and outgated back to the processor.
+<br>
+<h4>About 80286 processor</h4>
+<p>•The 80286 microprocessor is an advanced version of the 8086 microprocessor that is designed for multi user and multitasking environments.
+    <br>
+•The 80286 addresses 16 M Byte of physical memory and 1G Bytes of virtual memory by using its memory- management system.
+<br>
+•The 80286 is basically an 8086 that is optimized to execute instructions in fewer clocking periods than the 8086.
+<br>
+•Like the 80186, the 80286 doesn't incorporate internal
+
+peripherals; instead it contains a memorymanagement unit
+
+(MMU).
+<br>
+•The 80286 operates in both the real and protected modes.
+<br>
+(i) In the real mode, the 80286 addresses a 1MByte memory address space and is virtually identical to 8086.
+ <br>
+(ii)In the protected mode, the 80286 addresses a 16MByte memory space.
+  <br>
+•The clock is provided by the 82284 clock generator, and the system control signals are provided by the 82288 system bus controller.
+<br>
+•The 80286 contains the same instructions except for a handful of additional instructions that control the memory- management.
+</p>
+<h4>About 80386 procesor</h4>
+<p>
+•The 80386 microprocessor is an enhanced version of the
+
+80286 microprocessor and includes a memory-management unit is enhanced to provide memory paging. 
+ <br>
+•The 80386 also includes 32-bit extended registers and a 32- bit address and data bus.
+<br>
+•The 80386 has a physical memory size of 4GBytes that can be addressed as a virtual memory with up to 64TBytes.
+<br>
+•The 80386 is operated in the pipelined mode, it sends the address of the next instruction or memory data to the memory system prior to completing the execution of the current
+
+instruction.
+<br>
+•This allows the memory system to begin fetching the next instruction or data before the current is completed.
+<br>
+•This increases access time, thus reducing the speed of the memory.
+<br>
+• The I/O structure of the 80386 is almost identical to the 80286, except that I/O can be inhibited when the 80386 is operated in the protected mode through the I/O bit protection map.
+<br>
+•The register set of the 80386 contains extended versions of the registers introduced on the 80286 microprocessor. These extended registers include EAX, EBX, ECX, EDX, EBP, ESP, EDI, ESI, EIP and EFLAGS.
+<br>
+•The instruction set of the 80386 is enhanced to include instructions that address the 32-bit extended register set.
+<br>
+Interrupts, in the 80386 microprocessor, have been expanded to include additional predefined interrupts in the interrupt vector table.
+<br>
+•The 80386 memory manager is similar to the 80286, except the physical addresses generated by the MMU are 32 bits wide instead of 24-bits.
+<br>
+• The 80386 is also capable of paging the 80386 is operated in the real mode (i.e. 8086 mode) when it is reset.
+</p>
+<h4>About 80486 processor</h4>
+<p>
+    The 80486 microprocessor is an improved version of the 80386 microprocessor that contains an 8K-byte cache and an 80387 arithmetic co-processor; it executes many instructions in one clocking period.
+<br>
+• The 80486 microprocessor executes a few new instructions that control the internal cache memory.
+<br>
+• A new feature found in the 80486 in the BIST (built-in self-
+
+test) that tests the microprocessor, coprocessor, and cache at reset time.
+<br>
+If the 80486 passes the test, EAX contains a zero v Additional test registers are added to the 80486 to allow the cache memory to be tested.
+<br>
+• These new test registers are TR3 (cache data), TR4 (cache
+
+status), and TR5 (cache control).
+
+
+</p>
+<br>
+<br>
+<h2>If you want previous question papers of this subject press the next button:</h2>
+  
+       <br>
+       <br><br><br>
+       <button><a href="co&mp_all_pdfs".html"><B>NEXT</B></B></a></button><br><br><br><br>
+  
+       <div class="footer">
+             <p>&copy; 2023 C20 currculation diplama computer engineering</p>
+             <p>
+             This website describes briefly about C20 computer engineering syllabus of diploma from first year to final year and provides previous repeated questions, question papers & all topics in unit wise with their marks allocation and blueprints of each subjects
+             </p>
+             <p>
+            It is a website which describes briefly About G20 CHE Syllabus Diploma. & It is Used for To nechce dropout rates and to provide and access quality of Education # discribes briefly About the topic and their marks weightages and previous grepeated Questions & Question papers which is Currently present in Go regulation.
+             </p>
+         </div>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+1st sem
+</title>
+
+<style>
+body{
+  margin:0;
+  background-color:rgb(141, 214, 98);
+}
+ 
+
+.topnav {
+    background-color:#000000;
+    border:1px solid white;
+    color: #fff;
+    overflow:hidden;
+    display: flex;
+    width:100%;
+    
+}
+.topnav a {
+   
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+ 
+}
+ 
+  
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+}
+.topnav a:hover {
+  background-color:white;
+  color:black;
+}
+.topnav a.active {
+  background-color:white;
+  color: white;
+}
+
+h1{
+    font-size:50px;
+    text-align:center;
+}
+h3{
+    text-align:center;
+    font-size:30px;
+}
+  
+.blueprint{
+  text-align:center;
+  font-size:40px;
+  color:orange;
+}
+  
+ table,th,tr,td{
+   text-align:center;
+   border:1px solid black;
+   color:darkmagenta;
+ }
+  
+  
+.unit{
+  text-align:center;
+  font-size:30px;
+}
+  
+   .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    height:10%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topnav" style="position:fixed">
+   <div class="logo">
+            <img src="myimages/education.png" alt="Your Logo">
+        </div>
+  <a href="website.html"><b>HOME</b></a>
+  <a href="contact_us.html"><b>CONTACT</b></a>
+  <a href="About_us.html"><b>ABOUT US</b></a>
+</div>
+  
+  
+  <br><br><br>
+  <button><a href="C.html">back</a></button>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+             background-color: #f0f0f0;
+             font-family: Arial, sans-serif;
+         }
+         h1 {
+             color: red;
+         }
+         h2 {
+            color:orange;
+            }
+         p {
+             color: #666;
+         .row{
+             display: flex;
+             align-items: center;
+         }
+         .row{
+             align-items: center;
+         }
+     </style>
+</head>
+<body>
+ 
+  <h1 style="width: 100; text-align: center;">C programming</h1>
+    <h2>INTRODUCTION TO C:</h2> 
+   <p>C is a foundational language in computer science and has influenced the development of many other programming languages. It's commonly used in systems programming, embedded systems, and for building low-level software components.</p>
+    <p>   Learning C can provide a strong foundation for understanding computer architecture and programming concepts.</p>
+ <h4>MOSTLY REPEATED QUESTIONS IN PREVIOUS EXAMINATIONS:</h4> <br>
+  <p> 1. List the steps involved in executing a c program  </p>
+<p>2. What are the four storage class in c explain with example:  </p>
+ <p>  3. Explain continue statement  </p>
+<p>4. Explain any five preprocesser directives with example   </p>
+<p> 5.Define the keyword list any six keywords in c   </p>
+
+<p> 6.write the difference between structures and unions   </p>
+<p> 7.Define and declare a variable in c   </p>
+ <h2>ANSWERS FOR REPEATED QUESTIONS:</h2> 
+ <h4>1.List the steps involved in executing a c program </h4>
+   <p>Certainly! Here are the typical steps involved in executing a C program:</p>
+
+<p>1.Write the C Code: First, you need to write the C program code using a text editor or an integrated development environment (IDE).</p>
+
+<p>2.Save the Code: Save the C code with a `.c` file extension. For example, `myprogram.c`.</p>
+
+<p>3.Compile the Code: Use a C compiler to translate your source code into machine code. Common C compilers include GCC (GNU Compiler Collection), Clang, and Microsoft Visual C++. You can compile the code using the following command:</p>
+
+<p>4.Check for Errors: During compilation, the compiler may identify syntax or other errors in your code. Review and fix any errors that are reported.</p>
+
+<p>5.Execute the Program: Once the code is successfully compiled without errors, you can run the program by simply typing </p>
+
+<p>6.Review the Output: After execution, review the output of your program in the terminal or command prompt. Ensure that it behaves as expected.</p>
+
+<p>7.Debug (if necessary): If your program doesn't work as expected, use debugging tools or techniques to identify and fix any runtime errors or logical issues in your code.</p>
+</p>
+<p>These steps outline the typical process for creating and executing a C program. It's essential to have a C compiler installed on your system and to follow proper coding practices to ensure a successful execution
+   </p>
+   <h4>2.What are the four storage class in c explain with example: </h4>
+   <p> In C, there are four primary storage classes that determine how variables are stored in memory and their visibility throughout the program. These storage classes are:</p>
+
+<p>1.auto: The `auto` storage class is the default for most local variables. Variables declared as `auto` are stored in the stack memory, and their scope is limited to the block or function in which they are defined. They are automatically initialized to garbage values.</p>
+
+  <p> c
+   void exampleFunction() {
+       auto int num = 10;
+       // 'num' is an auto variable  
+   } </p>
+   
+
+<p>2.register: The `register` storage class is used to suggest to the compiler that a variable should be stored in a CPU register for faster access. However, the compiler is not obligated to honor this suggestion, and it might ignore it. Variables declared as `register` are also stored in the stack memory.</p>
+
+<p>   c
+   void exampleFunction() {
+       register int counter = 0;
+       // 'counter' is a register variable  
+   }</p>
+   
+
+<p>3.static: Variables with the `static` storage class have a longer lifespan than `auto` variables. They are initialized only once, and their values persist across function calls. They are stored in the data segment of memory.</p>
+
+<p>   c
+   void exampleFunction() {
+       static int count = 0;
+       // 'count' is a static variable
+       count++;
+   }  </p>
+   
+
+<p>4.extern: The `extern` storage class is used to declare variables that are defined in other files or source code. It's used for creating global variables that can be accessed across multiple source files. The actual variable definition is typically found in another source file.</p>
+
+<p>   c
+   // In file1.c
+   int globalVar = 42; </p>
+   
+<p>   // In file2.c
+   extern int globalVar; // Declaration  </p>
+   
+
+<p>These storage classes control the scope, lifetime, and storage location of variables in C programs, allowing developers to manage memory and access control effectively.  </p>
+
+    <h4>  write the difference between structures and unions  </h4>
+    <centre><h2>Diffrence between structure and union </h2><hr>
+    <table style="width:100%">
+     <style>
+     table, th, td {
+     border: 1px solid white;
+}
+</style>
+<tr>
+ <th>Structure</th>
+ <th>Union</th>
+</tr>
+
+<tr>
+<td> Each member of a structure is allocated its own separate memory space. The size of a structure is the sum of the sizes of all its members.</td>
+<td> In a union, all members share the same memory space. The size of a union is equal to the size of its largest member.</td>
+</tr>'
+
+<tr>
+<td>Each member of a structure has its own distinct memory location. You can access any member of the structure independently.</td>
+<td>Since union members share the same memory, modifying one member will affect the value of all other members. Unions are often used when you need to store different types of data in the same memory location.</td>
+</tr>
+
+<tr>
+<td> Typically, structures are larger in size because they allocate memory for each member separately.</td>
+<td> Unions are generally smaller in size since they share memory among their members. The size is determined by the largest member.</td>
+</tr>
+
+<tr>
+<td> Structures are used when you want to create a composite data type that can hold multiple pieces of data, each with its own meaning. For example, a structure might represent a person with members for name, age, and address.</td>
+<td> Unions are useful when you need to conserve memory and only one of the union members is relevant at any given time. For instance, in networking, unions can be used to represent different types of network packets.</td>
+</tr>
+
+<tr>
+<td>You can initialize each member of a structure separately.</td>
+<td>You can initialize only one member of a union at a time</td>
+</tr>
+
+<tr>
+<td>// Structure example
+struct Point {
+    int x;
+    int y;
+};</td>
+
+<td>// Union example
+union Data {
+    int intValue;
+    double doubleValue;
+    char stringValue[20];
+};</td>
+</tr>
+</table><hr>
+
+<h4>Define and declare a variable in c </h4>
+<p>In C, you can define and declare a variable as follows:</p>
+
+<b>1.Variable Declaration:</b>
+   
+   <p>Variable declaration tells the compiler about the name and data type of the variable, but it does not allocate memory for the variable. It typically appears at the beginning of a block or function.</p>
+
+<b>2.Variable Definition:</b>
+
+   <p>Variable definition not only declares the variable but also allocates memory for it. It assigns an initial value to the variable if provided.</p>
+   <p>Remember that C is a statically-typed language, which means you need to declare and define variables with their data types before using them.</p>
+ 
+<h4> Define the keyword list any six keywords in c  </h4>  
+<p>Certainly! Here are six keywords in the C programming language:</p>
+
+<p>1.int: Used to declare integer variables.</p>
+<p>2.float: Used to declare floating-point variables.</p>
+<p>3.if: Used to start a conditional statement.</p>
+<p>4.while: Used to create a loop that continues while a condition is true.</p>
+<p>5.for: Used to create a loop with initialization, condition, and increment/decrement expressions.</p>
+<p>6.return: Used to exit a function and return a value.</p>
+
+<p>These are some of the fundamental keywords in C, and they play a crucial role in writing C programs.</p>
+
+<h4> Explain any five preprocesser directives with example </h4>
+  <p>Certainly! Preprocessor directives in C are commands that are processed before the actual compilation of the code begins. They start with a '#' symbol. Here are five common preprocessor directives with examples:</p>
+
+<p>1.#include: This directive is used to include header files in your program.</p>
+<p> EX:#include <stdio.h></p>
+   
+
+<p>2.#define: It is used for defining macros, which are symbolic names for values or code snippets.</p>
+<p>EX:#define PI 3.14159 </p>
+   
+
+<p>3.#ifdef and #ifndef: These are used for conditional compilation. They check if a particular macro is defined or not.</p>
+<p> EX: #ifndef DEBUG </p>
+  <p> // Code to be compiled only if DEBUG is not defined </p>
+   <p>#endif</p>
+   
+
+<p>4.#ifdef DEBUG
+   printf("Debug mode is enabled\n");</p>
+ <p>  #endif</p>
+   
+
+<p>5.#pragma: This directive provides instructions to the compiler. One common use is for optimization settings.</p>
+<p>  EX: #pragma warning(disable : 4996)</p>
+   
+
+<p>These preprocessor directives help control various aspects of the compilation process and enable conditional compilation and code reuse in C programs.</p>
+
+<h4> Explain continue statement </h4>
+  <p>The `continue` statement is a control flow statement used in programming languages like C to alter the flow of a loop, specifically within loops like `for`, `while`, and `do-while`. When encountered, the `continue` statement causes the program to skip the rest of the current iteration of the loop and immediately jump to the next iteration. In other words, it allows you to bypass the remaining statements in the loop's body for the current iteration and move on to the next iteration.</p>
+
+<p>Here's a basic example of how the `continue` statement works within a `for` loop in C:</p>
+
+<p>#include <stdio.h></p>
+<p>int main() { </p>
+    <p>for (int i = 1; i <= 5; i++) {</p>
+       <p> if (i == 3) {</p>
+            <p>continue; // Skip iteration when i is 3</p>
+       <p> }</p>
+      <p>  printf("Iteration %d\n", i);</p>
+   <p> }</p>
+  <p>  return 0;</p>
+<p>}</p>
+
+
+<p>In this example, when `i` is equal to 3, the `continue` statement is encountered, and the program jumps to the next iteration without executing the `printf` statement. As a result, the output will be:</p>
+
+
+<p>Iteration 1</p>
+<p>Iteration 2</p>
+<p>Iteration 4</p>
+<p>Iteration 5</p>
+
+
+<p>The `continue` statement is useful when you want to skip certain iterations of a loop based on a condition, allowing you to control the flow of your loop more precisely.</p>
+
+<h4> write c program to print all even numbers between 1 and N using do while loop </h4>
+  <p>Certainly! Here's a C program that prints all even numbers between 1 and N using a `do-while` loop:</p>
+<p>#include <stdio.h></p>
+<p>int main() {</p>
+    <p>int N;</p>
+  <p>  printf("Enter the value of N: ");</p>
+    <p>scanf("%d", &N); </p>
+    <p>int i = 2;</p>
+   <p> printf("Even numbers between 1 and %d are:\n", N); </p>
+   <p> do { </p>
+       <p> printf("%d ", i); </p>
+       <p> i += 2; </p>
+  <p>  } while (i <= N);</p> 
+  <p>  printf("\n");</p>
+ <p>   return 0;</p>
+
+
+
+<p>In this program, the `do-while` loop starts with the variable `i` initialized to 2, which is the first even number. It then prints `i` and increments it by 2 in each iteration until `i` is greater than `N`. This way, it prints all even numbers between 1 and N.</p>
+<br>
+  
+       <br>
+       
+       <h2>If you want previous question papers of this subject press the next button:</h2>
+       <br>
+       <br><br><br>
+       <button><a href="#c question papers.html".html"><B>NEXT</B></B></a></button><br><br><br><br>
+  
+       <div class="footer">
+             <p>&copy; 2023 C20 currculation diplama computer engineering</p>
+             <p>
+             This website describes briefly about C20 computer engineering syllabus of diploma from first year to final year and provides previous repeated questions, question papers & all topics in unit wise with their marks allocation and blueprints of each subjects
+             </p>
+             <p>
+            It is a website which describes briefly About G20 CHE Syllabus Diploma. & It is Used for To nechce dropout rates and to provide and access quality of Education # discribes briefly About the topic and their marks weightages and previous grepeated Questions & Question papers which is Currently present in Go regulation.
+             </p>
+         </div>
+</body>
+</html>

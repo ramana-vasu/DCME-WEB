@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body{
+  margin:0;
+  background-color:rgb(141, 214, 98);
+}
+ 
+
+.topnav {
+    background-color:#000000;
+    border:1px solid white;
+    color: #fff;
+    overflow:hidden;
+    display: flex;
+    width:100%;
+    
+}
+.topnav a {
+   
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+ 
+}
+ 
+  
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+}
+.topnav a:hover {
+  background-color:white;
+  color:black;
+}
+.topnav a.active {
+  background-color:white;
+  color: white;
+}
+
+h1{
+    font-size:50px;
+    text-align:center;
+}
+h3{
+    text-align:center;
+    font-size:30px;
+}
+  
+.blueprint{
+  text-align:center;
+  font-size:40px;
+  color:orange;
+}
+  
+ table,th,tr,td{
+   text-align:center;
+   border:1px solid black;
+   color:darkmagenta;
+ }
+  
+  
+.unit{
+  text-align:center;
+  font-size:30px;
+}
+  
+   .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    height:10%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topnav" style="position:fixed">
+   <div class="logo">
+            <img src="myimages/education.png" alt="Your Logo">
+        </div>
+  <a href="website.html"><b>HOME</b></a>
+  <a href="contact_us.html"><b>CONTACT</b></a>
+  <a href="About_us.html"><b>ABOUT US</b></a>
+</div>
+  
+  
+  <br><br><br>
+  <button><a href="CN.html">back</a></button>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUTER NETWORKING</title>
+    <style>
+        body {
+               background-color: #f0f0f0;
+               font-family: Arial, sans-serif;
+           }
+           h1 {
+               color: red;
+           }
+           h2 {
+              color:orange;
+              }
+           p {
+               color: #666;
+           .row{
+               display: flex;
+               align-items: center;
+           }
+           .row{
+               align-items: center;
+           }
+       </style>
+   </head>
+</head>
+<body>
+    
+        <h1 style="width: 100%; text-align: center;">COMPUTER NETWORKING</h1>
+    <h2>NEED OF NETWORKING:</h2>
+    <p>A network consists of two (or) more computers that are linked in order to share resources (such as printers and CDs). exchange files (or) allow electronic communications.
+
+The computers on a network may be linked through cables, telephone lines, radio waves, satellites (or) infrared light beams. Network computer devices that originate, route and terminate the data are called network nodes.
+
+Nodes can include hosts such as personal computers, phones, servers as well as networking hardware. Two such devices can be said to be networked together when one device is able to exchange information with the other device, whether (or) not
+
+they have a direct connection to each other.</p>
+<h2>MOSTLY REPEATED QUESTIONS IN PREVIOUS EXAMINATIONS:</h2>
+<p><br>1) Write the need for IPV6</br>
+   <br>  2) Explain about the IP header with a neat diagram.</br>
+
+<br>3) list and Explain the components of IP address</br>
+
+<br>4) write about SNNP</br>
+
+<br>5) Explain the OSI reference model with a neat diagram.</br>
+
+<br>6) Explain the following protocals.</br>
+
+<br>i) HTTP ii) FTP iii)SHTP</br>
+
+<br>7 write the purpose of bootable rescuedisk</br>
+
+<br>8) Define LAN and WAN</br>
+
+<br>9) Explain IPv6 addressing Schema with Exampleaddress</br>
+ <br>10) list hardware and software components in LAN</br>
+
+<br>11) What are classes of Ip</br></p>
+<h2>ANSWERS FOR REPEATED QUESTIONS</h2>
+<h4>COMPONENTS OF IP ADDRESS</h4>
+
+<p>The total IP address 32 bits are considered a single "entity" they have an internal structure containing two components:
+
+<br>1. Network Identifier (Network ID): </br>
+<br>A certain number of bits, starting from the left-most bit, it is used to identify the network where the host (or) other network interface is located. This is also sometimes called the network prefix (or) even just the prefix</br>
+
+<br>2. Host Identifier (Host ID):</br>
+<br> The remainder of the bits is used to identify the host on the network</br></p>
+<br><h4>ABOUT SNMP</h4></br>
+<br><h6>SIMPLE NETWORK MANAGEMENT PROTOCOL(SNMP):</h6></br>
+<p>Simple Network Management Protocol (SNMP) is an application-layer protocol defined by the Internet Architecture Board (IAB) in RFC1157 for exchanging management information between network devices. It is a part of Transmission Control Protocol D Internet Protocol (TCPD IP)
+
+protocol suite.
+<br>
+SNMP is one of the widely accepted protocols to manage and monitor network elements. Most of the professional-grade network elements come with bundled SNMP agent. These agents have to be enabled and configured to communicate with the network management system (NMS).
+<br>
+SNMP consists of:
+<br>
+1 SNMP Manager,mos
+<br>
+2 Managed devices.
+<br>
+3 SNMP agent.
+<br>
+4 Management Information Database (or) Management Information Base (MIB).
+<br>
+1. SNMP Manager: A manager (or) management system is a separate entity that is responsible to communicate with the SNMP agent implemented network devices. This is typically a computer that is used to run one (or) more network management systems.
+<br>
+SNMP Manager's key Functions:
+<br>
+⚫ Queries agents.
+<br>
+⚫ Gets responses from agents.
+<br>
+Sets variables in agents.
+<br>
+Acknowledges asynchronous events from agents.  <br>
+2. Managed Devices: A managed device (or) the network element is a part of the network that requires some form of monitoring and management e.g. routers, switches, servers, workstations, printers, UPSs, etc..
+<br>
+3. SNMP Agent: The agent is a program that is packaged within the network element. Enabling the agent allows it to collect the management information database from the device locally and makes it available to the SNMP manager, when it is queried for. These agents could be standard (Eg: Net-SNMP) (or) specific to a vendor (Eg: HP insight agent)
+<br>
+SNMP Agent's key Functions :
+<br>
+• Collects management information about its local environment
+<br>
+Stores and retrieves management information as defined
+<br>
+in the MIB. Signals an event to the manager. • Acts as a proxy for some non-SNMP manageable network node.
+<br>
+4. Management Information Database (or) Management Information Base (MIB): Every SNMP agent maintains an information database describing the managed device parameters. The SNMP manager uses this database to request the agent for specific information and further translates the information as needed for the Network Management System (NMS). This commonly shared database between the Agent and the Manager is called Management Information Base (MIB).
+<br>
+Typically these MIB contains standard set of statistical and control values defined for hardware nodes on a network. SNMP also allows the extension of these standard values with values specific to a particular agent through the use of private MIBs.
+   <br>
+   <h4>OSI REFERENCE MODEL</h4>  <br>
+   <p> Virtually all networks today are based on the Open Systems Interconnection (OSI) standard. OSI was developed in 1984 by the International Organization for Standardization (ISO), a global federation of national standards organizations representing approximately 130 countries. The core of this standard is the OSI Reference Model, a set of seven layers that define the different stages that data must go through to travel from one device to another over a network. </p>
+   <br>
+<p>Think of the seven layers as the assembly line in the computer. At each layer, certain things happen to the data that prepare it for the next layer. The seven layers, which separate into two sets, They are:
+<br>
+    1. Application Set :
+    <br>
+    (i) Layer-7: Application - This is the layer that actually
+    <br>
+    interacts with the operating system (or) application whenever the user chooses to transfer files, read messages (or) performs other network-related activities.
+    <br>
+    (ii) Layer-6: Presentation - Layer 6 takes the data provided by the Application layer and converts it into a standard format that the other layers can understand. <br>
+    <br>
+
+    Layer-5: Session Layer 5 establishes, maintains and ends communication with the receiving device.
+    <br>
+    2. Transport Set:
+    <br>
+    (1) Layer-4: Transport This layer maintains flow control
+    of data and provides for error checking and recovery  of
+    
+    data between the devices. Flow control means that the
+    
+    Transport layer looks to see if data is coming from more than one application and integrates each application's data into a single stream for the physical network.   <br>(ii) Layer-3: Network - The way that the data will be sent to
+    
+    the recipient device is determined in this layer. Logical
+    
+    protocols, routing and addressing are handled here.
+    <br>
+    (iii) Layer-2: Data In this layer, the appropriate physical protocol is assigned to the data. Also, the type of network and the packet sequencing is defined.
+    <br>
+    (iv) Layer-1 Physical This is the level of the actual hardware. It defines the physical characteristics of the network such as connections, voltage levels and timing.
+    <br>
+    The OSI Reference Model is just a guideline. Actual protocol stacks often combine one (or) more of the OSI layers into a single layer.  <br>
+<h4>HYPER TEXT TRANSFER PROTOCOL(HTTP)</h4>
+<P>Hyper Text Transfer Protocol (HTTP):
+    <br>
+    HTTP (Hyper Text Transfer Protocol) is the set of rules for transferring files (text, graphic images, sound, video, and other multimedia files) on the World Wide Web. As soon as a Web user opens their Web browser, the user is indirectly making use of HTTP HTTP is an application protocol that runs on top of the TCP/IP suite of protocols (the foundation protocols for the Internet). HTTP concepts include (as the Hypertext part of the name implies) the idea that files can contain references to other files whose selection will elicit additional transfer requests. Any Web server machine contains, in addition to the Web page files it can serve, an HTTP daemon, a program that is designed to wait for HTTP requests and handle them when they arrive. Your Web browser is an HTTP client, sending requests to server machines. When the browser user enters file requests by either "opening" a Web file (typing in a Uniform Resource Locator or URL) (or) clicking on a hypertext link,</P>
+    </p>  <br>
+    <h4>FILE TRANSFER PROTOCOL(FTP)</h4>  <br>
+    <p>the browser builds an HTTP request and sends it to the Internet Protocol address (IP address) indicated by the URL... The HTTP daemon in the destination server machine receives the request and sends back the requested file (or) files associated with the request.
+<br>
+        File Transfer Protocol (FTP)
+        <br>
+        FTP is a client-server protocol that relies on two communications channels between client and server: a command channel for controlling the conversation and a data channel for transmitting file content. Clients Initiate conversations with servers by requesting to download a file. Using FTP, a client can upload, download, delete, rename, move and copy files on a server. A user typically needs to log on to the FTP server, although some servers make some (or) all of their content available without login, also known as anonymous FTP FTP sessions work in passive (or) active modes. In active mode, after a client initiates a session via a command channel request, the server initiates a data connection back to the client and begins transferring data. In passive mode, the server instead uses the command channel to send the client the information it needs to open a data channel. Because passive mode has the client initiating all connections, it works well across firewalls and Network Address Translation (NAT) gateways.
+        <br>
+        <h4>Simple Mail Transfer Protocol (SMTP)</h4>
+        <br>
+       <p> SMTP (Simple Mail Transfer Protocol) is a TCP/IP protocol used in sending and receiving e-mail. However, since it is limited in its ability to queue messages at the receiving end, it is usually used with one of two other protocols, POP3 (or) IMAP that let the user save messages in a server mailbox and download them periodically from the server. In other words, users typically use a program that uses SMTP for sending e-mail and either POP3 (or) IMAP for receiving e-mail. On Unix-based systems, send-mail is the most widely-used SMTP server for e-mail. A commercial package, Sendmail, includes a POP3 server. Microsoft Exchange includes an SMTP server and can also be set up to include POP3 support. SMTP usually is implemented to operate over Internet port 25.</p>
+<h4>IPV6 ADDRESSING</h4>
+<p>INTERNET PROTOCOL VERSION-6 (IPV6) ADDRESSING
+
+    Internet Protocol version 6 (IPv6) is the latest revision of the Internet Protocol (IP) and the first version of the protocol to be widely deployed. IPv6 was developed by the Internet Engineering Task Force (IETF) to deal with the long-anticipated problem of IPv4 address exhaustion. IPv6 is redesigned entirely. It offers the following features:
+      <br>
+    • Larger Address Space
+    <br>
+    In contrast to IPv4, IPv6 uses 4 times more bits to address a device on the Internet. This much of extra bits can provide approximately 3.4 x 1038 different combinations of addresses. This address can accumulate the aggressive requirement of address allotment for almost everything in this world. According to an estimate, 1564 addresses can be allocated to every square meter of this earth.
+    <br>
+    Simplified Header
+    <br>
+    IPv6's header has been simplified by moving all unnecessary information and options (which are present in IPv4 header) to the end of the IPv6 header. IPv6 header is only twice as bigger than IPv4 provided the fact that IPv6 address is four times longer. <br>
+    Payload Length (16-bits): This fed is used to tell the routes how much information a particular packet contains it its payload. Payload is composed of Extension Headers and Upper Layer data. With 16 bits, up to 65535 bytes can be indicated, but if the Extension Headers contam Hop by Hop Extension Header, then the payload may exceed 65535 bytes and this field is set to 0.
+<br>
+    5. Next Header (8-bits): This field is used to indicate either the type of Extension Header. (or) if the Extension Header is not present then it indicates the Upper Layer PDU. The values for the type of Upper Layer PDU are same as IPv4's
+    <br>
+    6. Hop Limit (8-bits): This field is used to stop packet to loop in the network infinitely. This is same as TTL in IPv4. The value of Hop Limit field is decremented by 1 as it passes a link router hop). When the field reaches 0 the packet is discarded.
+    <br>
+    7. Source Address (128-bits): This field indicates the address
+    <br>
+    of originator of the packet
+    <br>
+    8. Destination Address (128-bits): This field provides the address of intended recipient of the packet
+    <br>
+    Extension Headers:
+    <br>
+    In IPv6, the Fixed Header contains only that much information which is necessary, avoiding those information which is either not required (or) is rarely used. All such information is put between the Fixed Header and the Upper layer header in the form of Extension Headers. Each Extension Header is identitled by a distinct value.
+    <br>
+    When Extension Headers are used. IPv6 Fixed Header's Next Header field points to the first Extension Header. If there is one more Extension Header, then the first Extension Header's "Next-Header field points to the second one, and so on. The last Extension Header's Next-Header field points to the Upper <br>
+    Layer Header. Thus, all the headers points to the next one in a linked list manner. If the Next Header field contains the value 59, it indicates that there are no headers after this header, not even Upper Layer Header.</p>
+<br>
+<h4>IP ADDRESS CLASSES</h4>
+<p>IP ADDRESS CLASSES
+<br>
+    The Class of the address determines which part belongs to the network address and which part belongs to the node address. All nodes on a given network share the same network prefix but must have a unique host number.
+    <br>
+    1. Class A Network : In a Class A Network binary address start with 0, therefore the decimal number can be anywhere from 1 to 126. The first 8 bits (the first octet) identify the network  <br>
+    and the remaining 24 bits indicate the host within the net An example of a Class A IP address is 102, 168 212 226, whers "102" identifies the network and "168.212.226" identifies host on that network
+ <br>
+2. Class B Network: In a Class B Network, binary addres start with 10, therefore the decimal number can be anywhe from 128 to 191. The number 127 is reserved for loopback and is used for internal testing on the local machine. The f 16 bits (the first two octets) identify the network and the remaining 16 bits indicate the host within the network. An example of a Class B IP address is 168.212.220.204 where "168.212" identifies the network and "226.204" identifies the host on that network.
+<br>
+3. Class C Network: Binary addresses start with 110, therefore the decimal number can be anywhere from 192 to 223. The first 24 bits (the first three octets) idently the network and the remaining 8 bits indicate the host within the network. An example of a Class C IP address is 200 168 212.226 where "200.168.212" identifies the network and "226" identifies the host on that network.
+<br>
+4. Class D Network: In a Class D Network, binary addresses start with 1110, therefore the decimal number can be anywhere from 224 to 239. Class D networks are used to support multi casting
+<br>
+5. Class E Network: In a Class E Network, binary addres start with 1111, therefore the decimal number can be anywher from 240 to 255. Class E networks are used for experimentation. They have never been documented (or utilized in a standard way.
+</p>
+<h4>Need of IPV6</h4>
+<p>The main reason IPv6 was developed was to provide a solution for the eventual exhaustion of addresses in IPv4. Unlike its predecessor, IPv6 uses four times more bits to address devices on the internet. These extra bits provide an address space for approximately 3.4 x 10^ 38 devices.</p>
+<h4>Write about IP header</h4>
+<p>The header contains information about IP version, source IP address, destination IP address, time-to-live, etc. The payload of an IP packet is typically a datagram or segment of the higher-level transport layer protocol, but may be data for an internet layer (e.g., ICMP or ICMPv6) or link layer (e.g., OSPF) instead.</p>
+<br>
+  <h2>If you want previous question papers of this subject press the next button:</h2>
+       <br>
+       <br><br><br>
+       <button><a href="cn_all_pdfs.html".html"><B>NEXT</B></B></a></button><br><br><br><br>
+  
+       <div class="footer">
+             <p>&copy; 2023 C20 currculation diplama computer engineering</p>
+             <p>
+             This website describes briefly about C20 computer engineering syllabus of diploma from first year to final year and provides previous repeated questions, question papers & all topics in unit wise with their marks allocation and blueprints of each subjects
+             </p>
+             <p>
+            It is a website which describes briefly About G20 CHE Syllabus Diploma. & It is Used for To nechce dropout rates and to provide and access quality of Education # discribes briefly About the topic and their marks weightages and previous grepeated Questions & Question papers which is Currently present in Go regulation.
+             </p>
+         </div>
+ </body>
+</html>

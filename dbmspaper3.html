@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+1st sem
+</title>
+
+<style>
+body{
+  margin:0;
+  background-color:rgb(141, 214, 98);
+}
+ 
+
+.topnav {
+    background-color:#000000;
+    border:1px solid white;
+    color: #fff;
+    overflow:hidden;
+    display: flex;
+    width:100%;
+    
+}
+.topnav a {
+   
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+ 
+}
+ 
+  
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+}
+.topnav a:hover {
+  background-color:white;
+  color:black;
+}
+.topnav a.active {
+  background-color:white;
+  color: white;
+}
+
+h1{
+    font-size:50px;
+    text-align:center;
+}
+h3{
+    text-align:center;
+    font-size:30px;
+}
+  
+.blueprint{
+  text-align:center;
+  font-size:40px;
+  color:orange;
+}
+  
+ table,th,tr,td{
+   text-align:center;
+   border:1px solid black;
+   color:darkmagenta;
+ }
+  
+  
+.unit{
+  text-align:center;
+  font-size:30px;
+}
+  
+   .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    height:10%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topnav" style="position:fixed">
+   <div class="logo">
+            <img src="myimages/education.png" alt="Your Logo">
+        </div>
+  <a href="website.html"><b>HOME</b></a>
+  <a href="contact_us.html"><b>CONTACT</b></a>
+  <a href="About_us.html"><b>ABOUT US</b></a>
+</div>
+  
+  
+  <br><br><br>
+  <button><a href="dbms.html">back</a></button>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: red;
+        }
+        h2 {
+           color:orange;
+           }
+        p {
+            color: #666;
+        .row{
+            display: flex;
+            align-items: center;
+        }
+        .row{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="row">
+    
+        <h1 style="padding-left: 75px;">DATABASE MANAGEMENT SYSTEM</h1>
+    </div>
+    
+    <h1></h1>
+    <h2>(DBMS)</h2>
+    <p>DBMS (Database Management System) : Database Management System is basically software that manages the collection of related data. It is used for storing data and
+retrieving the data effectively when it is needed. It also provides proper securitymeasures for protecting the data from unauthorized access. In Database Management
+System the data can be fetched by SQL queries and relational algebra. It also providesmechanisms for data recovery and data backup.
+Example : Oracle, MySQL, MS SQL server.</p>
+<h2>MOSTLY REPEATED QUESTIONS IN PREVIOUS EXAMINATIONS:</h2>
+<p><br>1) define the terms super key,candidate key and primary key.</br>
+   <br>  2) compare RDBMS & NOSQL..</br>
+
+<br>3) define the terms instance and schema</br>
+
+<br>4) what is NOSQL ?list the advantages of NOSQL.</br>
+
+<br>5) list any three schema objects.</br>
+
+<br>6) how to drop a database in mongodb.</br>
+
+<br>7) list the features of pl/sql.</br>
+
+<br>8)explain the procedure for creating,altering and dropping of tables</br>
+
+<br>9) explain different looping statements with examples.</br>
+ 
+<br>10)explain in details about various integrity constants. </br>
+
+<br>11)explain joins with examples.</br></p>
+<h2><u>ANSWERS FOR REPEATED QUESTIONS</u></h2>
+<p><br>1)Super Key</br>
+A superkey is a group of single or multiple keys which identifies rows in a table.A Super key may have additional 
+attributes that are not needed for unique identification.
+
+<br>Candidate key</br>
+It is a set of attributes that uniquely identify tuples in a table. Candidate Key is a super key with no repeated attributes.
+The Primary key should be selected from the candidate keys. Every table must have at least a single candidate key. 
+A table can have multiple candidate keys but only a single primary key. 
+
+<br>primary key</br>
+It is a column or group of columns in a table that uniquely identify every row in that table. 
+The Primary Key can't be a duplicate meaning the same value can't appear more than once in the table. A table cannot have more than one primary key
+The primary key field cannot be null.The value in a primary key column can never be modified or updated if any foreign key refers to that primary key
+
+<br>2)<u>RDBMS</u>
+<br>.users know RDBMS well as it is old and many organizations use this database for the proper format of data.</br>
+<br>.user interface tools to access data is available is the market so that users can try with all the schema to the RDBMS infrastructure.this helps
+to interact with the data well and users will understand the data in a better manner.</br>
+<br>.RDBMS scalability and performance faces some issues if the data is huge.servers may not run properly with the available load and this 
+leads to performance issues.</br>
+<br>.multiple tables can be joined easily in RDBMS and this does not cause any latency in the working of the database.the primary key helps in this case.</br>
+<br>.data analysis and querying can be dine easily ⁬with RDBMS even though the queries are complex.
+slicing and dicing can be done with the available data to make the proper analysis of the data given.</br>
+<br>.document cannot be stored in RDBMS because data in the database should be structured and in a proper format to create identifiers.</br>
+<br>.partitions cannot be created in the database.key value pairs are needed to identify the data in a particular format specified in the schema database.</br>
+<br>2)<u>NoSQL</u>
+<br>.this is relatively new and experts in NoSQL are less as this database is evolving day by day.</br>
+<br>.user interface tools to access and manipulate data in NoSQL is very less and hence users do not have many options to interact with data.</br>
+<br>.it works well with high loads.scalability is very good in NoSQL.this makes the performance of the database better when compared with RDBMS.
+A huge amount of data could be easily handled by users.</br>
+<br>.multiple tables cannot be joined in NoSQL as it is not an easy task for the database and does not work well with the performance of the data.</br>
+<br>.data analysis is done also in the NoSQL but it works well with real-time data analytics.reports are not done in the database but if hte appilication has
+ to be built,then Nosql is a solutions for the same.</br>
+<br>.document can be stored in the NoSQL database as this is unstructured and not in rows and columns format.</br>
+<br>.partitions can be stored in the NoSQL database easily and key-value pairs are not needed to to identify the data in the source. 
+software as a service can be integrated with NoSQL.</br>
+<br>3)Instances: Instances are the collection of information stored at a particular moment. The instances can be changed by certain CRUD operations
+ as like addition, deletion of data.It may be noted that any search query will not make any kind of changes in the instances. </br>
+<br>Example: Lets say a table teacher in our database whose name is School, suppose the table has 50 records so,the instance of the database has 50 records for now and tomorrow 
+we are going to add another fifty records so tomorrow the instance have total 100 records. This is called an instance.</br>
+<br>Schemas: Schema is the overall description of the database. The basic structure of how the data will be stored in the database is called schema.
+Schema is of two types. They are :</br>
+
+<br>(i) Logical Schema : It describes the database designed at logical level.</br>
+
+<br>(ii) Physical Schema : It describes the database designed at physical level.</br>
+<br> Example: Lets say a table teacher in our database name school, 
+the teacher table require the name, dob, doj in their table so we design a structure as :</br>
+<br>Teacher table</br>
+<br>name: String</br>
+<br>doj: date all inT: (love. I learnt)</br>
+<br>dob: date m</br>
+<br>Above given is the schema of the table teacher.</br>
+<br>4) NOSQL: NoSQL database stands for "Not Only SQL" or "Not SQL." Though a better term would be "NOREL", NoSQL caught on. 
+Carl Strozz introduced the NoSQL concept in 1998.Traditional RDBMS uses SQL syntax to store and retrieve data for further insights. 
+Instead, a NoSQL database system encompasses a wide range of database technologies that can store structured, semi-structured,
+ unstructured and polymorphic data.</br>
+<brAdvantages of NoSQL Databases: Regardless of these obstacles, NoSQL databases have been widely adopted in many enterprises for the following reasons:</br>
+<br>1 Elastic Scalability: RDBMSs are not as easy to scale out on commodity clusters, whereas NoSQL databases are made for transparent expansion,
+ taking advantage of new nodes. These databases are designed for use with low-cost commodity hardware In a world where upward scalability is
+ being replaced by outward scalability, NoSQL databases are a better fit.</br>
+<br>2. Big Data Applications: Given that transaction rates are growing from recognition, there is need to store massive volumes of data. 
+While RDBMSs have grown to match the growing needs, but its difficult to realistically use one RDBMS to manage such data volumes. 
+These volumes are however easily handled by NoSQL databases.</br>
+<br>3. Database Administration: The best RDBMSs require the services of expensive administrators to design, Install and maintain the systems.
+ On the other hand, NoSQL databases require much less hands-on management, with data distribution and auto repair capabilities, simplified data
+ models and fewer tuning and administration requirements. However, in practice, someone will always be needed to take care of performance and
+ availability of databases.</br>
+<br>4. Economy: RDBMSs require installation of expensive storage systems and proprietary servers, while NoSQL databases can be easily installed in 
+cheap commodity hardware clusters as transaction and data volumes increase. This means that you can proces and store more data at much less cost.</br>
+<br>6) Dropping of Database : MongoDB db.dropDatabase() command is used to drop a existing database.</br>
+<br>Steps:</br>
+Select the database.
+<br>Drop the database.</br>
+syntax:
+<br> use <database_name></br>
+db.dropdatabase()
+<br>example</br>
+use employee
+<br>db.dropdatabase()</br>
+<br>this will be delete the selected database.if you have not selected any database,then it will delete default 'test' database</br>
+<br>example:first,check the list of variables database by using the command,show dbs.</br>
+<br>>show dbs</br>
+local 0.78125GB</br>
+mydb 0.23012GB</br>
+test 0.23012GB</br>>
+<br>if  you want to delete new database <mydb>, then drop database() command would be as follow:</break>
+<br>>use mydb</br>
+switched to db mydb</br>
+>db.dropdatabase()</br>
+>{"dropped". : "mydb","ok" : 1}</br>>
+<br>now check list of databases.</br>
+<br>>show dbs</br>
+local 0.78125GB</br>
+test 0.23012GB</br>>
+<br>7)FEATURES OF PL/SQL:</br>
+<br>PL/SQL is tightly integrated with SQL.</br>
+<br>.it offers extensive error checking.</br>
+<br>.it offers numerous data types.</br>
+<br>.it offers a variety of programming structures.</br>
+<br>.it supports structured programming through functions and procedures.</br>
+<br>.it supports object-oriented programming.</br>
+<br>.it supports the development of web applications and server pages.</br>
+<br>8)1.CREATE DATABASE</br>
+<br>we can use below command to create a database on SQL server instance.to create a database,we must be logged into the server and have appropriate permissions
+(CREATE DATABASE,CREATE ANY DATABASE,OR ALTER ANY DATABASE).</br>
+<br>syntax:CREATE DATABASE<database_name</br>>
+<br>2.ALTER DATABASE</br>
+<br>we can change the settings of created database using ALTER DATABASE command.for example,to modify the file name (data or log file),</br>
+<br>syntax:ALTER DATABASE=database-name</br>
+<br>MODIFY FILE(name=old file name</br>
+<br>newname=new file name)</br>
+<br>3.DROP DATABASE</br>
+<br>to delete a database permanently from the server</br>
+<br>syntax:DROP DATABASE=database-name</br>
+<br>9)looping in PL/SQL provides a way of repeating a particular part of any program or any code statements as many times as required.</br>
+<br>in PL/SQL we have three different loop options to choose from when we want to execute a statements repeatedly in our code block .they are:</br>
+<br>1.basic loop</br>
+<br>2.while loop</br>
+<br>3.for loop</br>
+<br>in this tutorial we learn about all three of them while coverting the concept of nexted loops which means loop inside a loop.so lets get started.</br>
+<br>1.PL/SQL basic loop:basic loop or simple is preffered in PL/SQL code when there is no surety about how many times the block of code is to be repeated.when we use 
+the basic loop the code block will be executed at least once.</br>
+<br>while using it,following two things must be considered:</br>
+<br>Simple loop always begins with the keyword LOOP and ends with a keyword END LOOP.</br>
+<br>A basic/simple loop can be terminated at any given point by using the exit statement or by specifying certain condition by using the statement exit</br>
+<br>syntax:</br>
+<br>LOOP</br>
+sequence of statements
+<br>END LOOP;</br>
+lets see the simple loop in action in the code example below.
+<br>time for an example</br>
+In the code below ,we have used the loop to print counting from 1 to 10 on the console and have used the exit statement to break out of the loop.
+<br> set serveroutput on;</br>
+<br>DECLARE</br>
+i int;
+<br>BEGIN</br>
+i:=1;
+<br>LOOP</br>
+  if i>10 then
+        <br> exit;</br>
+end if;
+<br>dbms_output.put_line(i);</br>
+i:=i+1;
+<br>END LOOP;</br>
+END;
+<br>1</br>
+<br>2</br>
+<br>3</br>
+<br>4</br>
+<br>5</br>
+<br>6</br>
+<br>7</br>
+<br>8</br>
+<br>9</br>
+<br>10</br>
+PL/SQL procedures sucessfully completed
+<br>lets take one more example where we will be using the exit when statements to break out of the loop.</br>
+set serveroutput on;
+<br>DECLARE</br>
+i Int;
+<br>BEGIN</br>
+i:=0;
+<br>LOOP</br>
+i:=i+2
+<br>dbms_output.put_line(i);</br>
+exit WHENx>10
+<br>END LOOP;</br>
+END;
+<br>2</br>
+<br>4</br>
+<br>6</br>
+<br>8</br>
+<br>10</br>
+PL/SQL procedure sucessfully completed
+<br>PL/SQL:while Loop:It is an entry controlled loop which means that before entering in a while loop first the condition is tested,if the condition is TRUE the statements 
+or a group of statements get executed and if the condition FALSE the control will move out of the while loop.</br>
+syntax:
+<br>WHILE<test_condition>LOOP</br>
+<br>END LOOP;</br>
+lets see the while loop in action in the code examole below.
+<br>time for an example!</br>
+<br>below we have a simple program to print the odd numbers between 1 to 10 using the while loop.</br>
+<br>set serveroutput on;</br>
+<br>DECLARE</br>
+num int:=1;
+<br>BEGIN</br>
+while(num<=10)LOOP
+<br>dbms_output.put_line("||no);</br>
+num:=num+2;
+<br>END LOOP;</br>
+END;
+<br>1</br>
+3
+<br>5</br>
+7
+<br>9</br>
+<br>PL/SQL procedure sucessfully completed.</br>
+<br>PL/SQL: For Loop: This loop is used when some statements in PL/SQL code block are to be repeated for a fixed number of times.When we use the for loop we are 
+supposed to define a counter variable which decides how many time the loop will be executed based on a starting and ending value provided at the beginning of the loop. 
+shirley is The for loop automatically increments the value of the counter variable by 1 at the end of each loop cycle.</br>
+The programmer need not have to write any instruction for incrementing or decrementing Value.
+<br> FOR counter_variable IN start_value..end_value LOOP</br>
+statement to be executed
+<br>END LOOP;</br>
+
+Let's see the for loop in action in the example below.
+
+Time for an Example!
+
+In the example below we have used a the for loop to print numbers from 1 to 10.
+
+set serveroutput on;
+<br>DECLARE</br>
+i number(2);
+<br>for i in 1..10LOOP</br>
+dbms_output.put_line(i);
+<br>END LOOP;<br>
+END;
+<br>1</br>
+2
+<br>3</br>
+4
+<br>5</br>
+6
+<br>7</br>
+8
+<br>9</br>
+10
+<br>PL/SQL procedure sucessfully completed.</br>
+now. let's take another example where we will print the number in reverse order.
+<br>set serveroutput on;</br>
+DECLARE
+<br>i number(2);</br>
+BEGIN 
+<br> FOR i IN REVERSE 1..10LOOP</br>
+END LOOP;
+<br>END;</br>
+10
+<br>9</br>
+8
+<br>7</br>
+6
+<br>5</br>
+4
+<br>3</br>
+2
+<br>1</br>
+PL/SQL procedure sucessfully completed.
+<br>10)SQL Constraints are rules used to limit the type of data that can go into a table, to maintain the accuracy and integrity of the data inside table.</br>
+Constraints can be divided into the following two types. They are:
+
+<br>1. Column Level Constraints: Limits only column data.</br>
+
+2. Table Level Constraints: Limits whole table data.
+
+<br>Constraints are used to make sure that the integrity of data is maintained in the database Following are the most used constraints that can be applied to a table.</br>
+.NULL CONSTANTS
+<br>.UNIQUE</br>
+.PRIMARY KEY
+<br>.FOREIGN KEY</br>
+.CHECK
+<br>.DEFAULT</br>
+NOT NULL Constraint: NOT NULL constraint restricts a column from having NULL value. Once NOT NULL constraint is applied to a column, 
+you cannot pass null value to that column. It enforces a column to contain a proper value.
+<br>UNIQUE Constraint: UNIQUE constraint ensures that a field or column will onl have unique values. A UNIQUE constraint field will not have duplicate data.
+ The AMPLE-2 constraint can be applied at column level or table level.</br>
+Primary Key Constraint: Primary key constraint uniquely identifies each record in database. A Primary Key must contain unique value and it must not contain nu value.
+ Usually Primary Key is used to index the data inside the table.
+<br>Foreign Key Constraint: FOREIGN KEY is used to relate two tables. FOREIGN KEY constraint is also used to restrict actions that would destroy links between tables.
+understand FOREIGN KEY, let's see its use, with help of the below tables</br>
+<br>CHECK Constraint: CHECK constraint is used to restrict the value of a colum between a range. It performs check on the values, before storing them into the database. 
+It's like condition checking before saving data into a column.</br>
+SQL Constraints: SQL constraints are used to specifly rules for the data in a table Constraints are used to limit the type of data that can go into a table. 
+This ensures th accuracy and reliability of the date in the table.
+
+<br>⚫ Constraints can be column level or table level. The following constraints are common used in SQL.</br>
+.NOT NULL
+<br> UNIQUE</br>
+PRIMARY KEY
+<br>FOREIGN KEY</br>
+CHECK
+<br>DEFAULT</br>
+SQL NOT NULL : By default, a column can hold null values. The NOTNULL constraint enforces a column to not accept null values. This enforces a field to always Contain a value
+<br>CREATE TABLE Hero</br>
+<br>ID              int                       NOT NULL,</br>
+<br>Iname       varchar(30)       NOT NULL,</br>
+<br>Iname       varchar(30)       NOT NULL,</br>
+age         int),
+<br>SQL Unique Constraint: It ensures that all values in a column are different. Both unique and primary key constraints provide a guarantee for uniqueness for a 
+column or set of columns. However you can have many unique constraints for table.</br>
+Oracle:
+<br> CREATE  TABLE  Hero(</br>
+ID int NOT NULL UNIQUE,
+<br>Iname VARCHAR(30)NOT NULL,</br>
+<br>Iname VARCHAR(30)NOT NULL,</br>
+age int);
+<br>MySQL:</br>
+.CREATE TABLE Hero(
+<br>ID int NOT NULL,</br>
+Iname varchar(30) NOT NULL,
+<br>Iname varchar(30) NOT NULL,
+age  int,
+<br>UNIQUE(ID);</br>
+defining a unique constraint on multiple columns;
+<br>10)• SQL Joins: A SQL join statement is used to combine data or rows from two or more tables based on a common field between them. vasa
+Different types of Joins are :</br>
+<br> Different types of Joins are :</br>
+
+1. Equi Join,
+
+<br>2. Non-Equi Joins,</br>
+
+• Inner Join, and3 Cross join, and
+
+<br>4. Self join</br>
+
+Consider the Two Tables Below:
+
+<br>CREATE TABLE EMPLOYEE(EMP_ID integer, EMP_NAME varchar(20), CITY varchar(20), SALARY bigint, AGE Integer);</br>
+CREATE TABLE PROJECT(PROJECT_NO integer, EMP_ID integer, DEPARTMENT
+<br>varchar(20)),</br>
+insert into EMPLOYEE values(1,'Angelina','Chicago',200000,30);
+<br>insert into EMPLOYEE values(2, 'Robert', 'Austin',300000,26);</br>
+Insert into EMPLOYEE values(3,'Christian', 'Denver', 100000,42);
+<br>insert into EMPLOYEE values(4, 'Kristen', 'Washington',500000,29);</br>
+Insert into EMPLOYEE values(5,'Russell', 'Los angels',200000,36);
+<br>insert into EMPLOYEE values(6, Marry', 'Canada',600000,48);</br>
+Insert into PROJECT values(101,1, Testing");
+<br>insert into PROJECT values(102,2,'Development');</br>
+insert into PROJECT values(103,3,'Designing');
+<br>insert into PROJECT values(104,4,'Development');</br>
+<br>
+  
+       <br>
+       <h2>If you want previous question papers of this subject press the next button:</h2>
+       <br>
+       <br><br><br>
+       <button><a href="#dbms question papers.html".html"><B>NEXT</B></B></a></button><br><br><br><br>
+  
+       <div class="footer">
+             <p>&copy; 2023 C20 currculation diplama computer engineering</p>
+             <p>
+             This website describes briefly about C20 computer engineering syllabus of diploma from first year to final year and provides previous repeated questions, question papers & all topics in unit wise with their marks allocation and blueprints of each subjects
+             </p>
+             <p>
+            It is a website which describes briefly About G20 CHE Syllabus Diploma. & It is Used for To nechce dropout rates and to provide and access quality of Education # discribes briefly About the topic and their marks weightages and previous grepeated Questions & Question papers which is Currently present in Go regulation.
+             </p>
+         </div>
+</body>
+</html>
